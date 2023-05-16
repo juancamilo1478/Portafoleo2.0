@@ -64,15 +64,20 @@
         .clouds {
             position: absolute;
             z-index: -2;
+            width: 90%;
         }
 
         .sun {
             z-index: -1;
             position: absolute;
-            width: 150px;
+            width: 15%;
             transform: translateY(var(--position));
+
         }
 
+        .rickwalpeper {
+            width: 90%;
+        }
     }
 
 
@@ -102,6 +107,7 @@
 
     div {
         display: flex;
+        flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
     }

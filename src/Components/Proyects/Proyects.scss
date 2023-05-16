@@ -56,3 +56,23 @@
 
     }
 }
+
+@media (max-width: 900px) {
+    .Proyects {
+        width: 100%;
+        height: 100vh;
+
+        .ProyectContainer {
+            margin: 20px auto;
+
+            .ProyectIconNext {
+                left: 10px;
+            }
+
+            .ProyectIcon {
+                right: 10px;
+            }
+        }
+
+    }
+}

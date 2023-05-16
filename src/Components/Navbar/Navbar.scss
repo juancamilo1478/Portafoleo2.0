@@ -75,3 +75,33 @@
 
 
 }
+
+@media (max-width: 900px) {
+    .Navbar {
+        hr {
+            display: none;
+        }
+        width: 100%;
+        height: min-content;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        padding: 10px;
+        .NavPhoto {
+            display: none;
+        }
+
+        .NavLink {
+            display: none;
+        }
+
+        .NavContainer {
+
+            width: min-content;
+
+            h1 {
+                display: none;
+            }
+        }
+    }
+}

@@ -10,7 +10,6 @@ import paralax from "../../../assets/paralax2.png"
 import sun from "../../../assets/sol.png"
 import clouds from "../../../assets/nubes.jpg"
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
-
 const RickAndMorty=()=>{
     const izquierda=useRef()
     const derecha=useRef()
@@ -52,8 +51,6 @@ const RickAndMorty=()=>{
             }
         };
     }, []);
-
-
     const data=[photo1,photo2,photo3,photo4]
 
     return <div className="Rick" ref={divRick}>
@@ -75,9 +72,8 @@ const RickAndMorty=()=>{
         <div className="ParalaxRick" ref={divsun}>
         <img src={sun} alt="sun"  className="sun"/>
         <img src={clouds} alt="clouds" className="clouds"/>
-        <img src={paralax} alt="walpeper" />
+        <img src={paralax} alt="walpeper" className="rickwalpeper"/>
         </div>
-
     <div className="BottonsRick">
             <a href="https://github.com/juancamilo1478/rick_and_morty" target="_blank" rel="noreferrer">
             <div className="BaitBottons">
@@ -100,7 +96,7 @@ const RickAndMorty=()=>{
         <div className="skillsRick">
             <h1>Tecnologias</h1>
             <div>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40" />  </div>
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40" /></div>
         </div>
        
        

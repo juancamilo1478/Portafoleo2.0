@@ -12,33 +12,39 @@
     animation-iteration-count: 1;
     overflow-y: auto;
 
-
-    .BaitContainer2 {
+    .ContainerB3 {
         width: 90%;
-        display: flex;
-        margin: 100px auto;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
-        h1 {
-            font-size: 3rem;
-        }
-
-        div {
-            width: 50%;
+        .BaitContainer2 {
+            width: 90%;
+            display: flex;
             margin: auto;
 
-            p {
-                margin-left: 20px;
-                font-size: 1.1rem;
-                margin-top: 50px;
+            h1 {
+                font-size: 3rem;
+
             }
 
-            iframe {
-                transform: perspective(800px) rotateY(-35deg);
+            div {
+                width: 50%;
+                margin: auto;
+
+                p {
+                    margin-left: 20px;
+                    font-size: 1.1rem;
+
+                }
+
+                iframe {
+                    transform: perspective(800px) rotateY(-35deg);
+                }
             }
         }
+
     }
-
-
 }
 
 @keyframes bait {
@@ -90,4 +96,29 @@
 .Bait::-webkit-scrollbar-thumb {
     background: var(--green-1);
     border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    .Bait {
+        .ContainerB3 {
+            .BaitContainer2 {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                div {
+                    margin-bottom: 20px;
+                    width: 100%;
+
+                    iframe {
+                        margin-top: 10px;
+                        transform: perspective(0px) rotateY(0deg);
+                        width: 100%;
+                    }
+                }
+
+
+            }
+
+        }
+    }
 }

@@ -4,3 +4,10 @@
     background: rgb(97, 84, 84);
     display: flex;
 }
+
+@media (max-width: 900px) {
+    .AppWindow {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
