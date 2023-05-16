@@ -23,15 +23,23 @@ const Bait=()=>{
                         />
                 </div>
             </div>
+            
+      
             <div className="BaitBottons">
+                <a href="https://github.com/Rzyfront/Bait-App" target="_blank" rel="noreferrer">    
                 <div className="BaitBottons1">
                     <AiOutlineGithub className="BaitICO" />
                     <h2>Repositorio</h2>
+              
             </div>
+                </a>
+      
+                <a href="https://bait-one.vercel.app/" target="_blank" rel="noreferrer">    
                 <div className="BaitBottons1">
                     <AiOutlineLink className="BaitICO" />
                     <h2>Deploy</h2>                    
                 </div>
+                </a>
             </div>
         </div>
     </div>

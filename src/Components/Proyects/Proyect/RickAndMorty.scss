@@ -1,0 +1,118 @@
+.Rick {
+    overflow-y: scroll;
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    background: rgba(56, 56, 56, 0.13);
+    border-radius: 10px;
+    animation-name: bait;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+    .RickAnimation {
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+
+        img {}
+
+        .eyes {
+
+            padding: 10;
+            display: flex;
+            gap: 40px;
+            position: absolute;
+            transform: translateX(50%) translateY(-400%);
+
+            .eye {
+                padding: 2px;
+                border-radius: 50%;
+                background-color: black;
+                transform: translateX(var(--eyeizx)) translateY(var(--eyeizy));
+
+            }
+        }
+    }
+
+    .RickText {
+        display: flex;
+        width: 90%;
+        margin: auto;
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        div {
+            width: 50%;
+        }
+    }
+
+    .ParalaxRick {
+        position: relative;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        filter: brightness(var(--dark));
+
+        .clouds {
+            position: absolute;
+            z-index: -2;
+        }
+
+        .sun {
+            z-index: -1;
+            position: absolute;
+            width: 150px;
+            transform: translateY(var(--position));
+        }
+
+    }
+
+
+
+    .BottonsRick {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.skillsRick {
+    width: 80%;
+    color: white;
+    background: var(--blue-5);
+    min-height: 100px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    div {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+.Rick::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+.Rick::-webkit-scrollbar-thumb {
+    background: var(--green-1);
+    border-radius: 10px;
+}
