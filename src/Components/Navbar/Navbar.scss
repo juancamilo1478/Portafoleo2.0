@@ -1,0 +1,77 @@
+.Navbar {
+    width: 200px;
+    height: 100vh;
+    background: var(--gray-4);
+    color: white;
+    // position: fixed;
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #ccc;
+        margin: auto;
+        width: 95%;
+    }
+
+    .NavPhoto {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+        img {
+            width: 90%;
+            height: 150px;
+            margin: 10px auto;
+            border-radius: 50%;
+            margin-bottom: 50px;
+        }
+    }
+
+    .NavContainer {
+        margin-left: 5px;
+        text-align: center;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        gap: 5px;
+        margin-left: 15px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        .navIco {
+            font-size: 1.5rem;
+        }
+    }
+
+    .NavContainer:hover {
+        color: var(--green-1);
+    }
+
+    .NavLink {
+        display: flex;
+        gap: 10px;
+        bottom: 0px;
+        margin-bottom: 10px;
+        left: 10px;
+        justify-content: center;
+        margin: 150px auto;
+
+        .navIco {
+            cursor: pointer;
+            font-size: 3rem;
+            transition: 0.5s;
+        }
+
+        .navIco:hover {
+            color: var(--green-1);
+            transform: translateY(-10px);
+        }
+    }
+
+
+}

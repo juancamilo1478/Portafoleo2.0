@@ -1,0 +1,38 @@
+.slider {
+    position: relative;
+    transform: perspective(800px) rotateY(-35deg);
+    height: 100%;
+}
+
+.NEXT {
+    cursor: pointer;
+    right: 0;
+    position: absolute;
+    font-size: 2rem;
+
+    top: 50%;
+    transform: translateY(-51%) perspective(800px) rotateY(-35deg);
+    height: 100%;
+    background: rgba(0, 0, 0, 0.377);
+}
+
+.PREV {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-51%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.377);
+    height: 100%;
+}
+
+.PREV:hover {
+    background: rgba(0, 0, 0, 0.555);
+    color: #00D686;
+}
+
+.NEXT:hover {
+    background: rgba(0, 0, 0, 0.555);
+    color: #00D686;
+}
