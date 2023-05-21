@@ -1,0 +1,84 @@
+.abaut {
+    position: relative;
+    width: calc(100% - 200px);
+    height: 100vh;
+    color: var(--textPrimary);
+    background: var(--primaty);
+
+    .aboutContainer {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 80vh;
+        margin: 100px auto;
+
+        .containerAbaut {
+            overflow-y: scroll;
+            position: relative;
+            width: 80%;
+            height: 80vh;
+            margin: auto;
+            background: rgba(56, 56, 56, 0.13);
+            border-radius: 10px;
+            animation-name: bait;
+            animation-fill-mode: forwards;
+            animation-duration: 1.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+
+            .AboutText {
+                display: flex;
+                width: 90%;
+                margin: 100px auto;
+                gap: 15px;
+
+                div {
+                    width: 50%;
+
+                    p {
+                        font-size: 1.5rem;
+                    }
+
+                    img {
+                        width: 100%;
+                        background: var(--secont);
+                        border-radius: 50%;
+                        height: 400px;
+
+                    }
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        .containerAbaut::-webkit-scrollbar {
+            width: 7px;
+
+        }
+
+        .containerAbaut::-webkit-scrollbar-thumb {
+            background: var(--green-1);
+            border-radius: 10px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .abaut {
+        width: 100%;
+        height: 100vh;
+
+        .aboutContainer {
+            margin: 20px auto;
+        }
+
+    }
+}

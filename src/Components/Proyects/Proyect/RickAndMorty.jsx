@@ -10,6 +10,7 @@ import paralax from "../../../assets/paralax2.png"
 import sun from "../../../assets/sol.png"
 import clouds from "../../../assets/nubes.jpg"
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
+import { SiReact, SiJavascript, SiRedux } from "react-icons/si"
 const RickAndMorty=()=>{
     const izquierda=useRef()
     const derecha=useRef()
@@ -29,11 +30,12 @@ const RickAndMorty=()=>{
                //max desplazamient 8px in x ,max desplazamient in y 5px
             rootStyles.setProperty('--eyeizx', `${cosAnglex*8}px`);
             rootStyles.setProperty('--eyeizy', `${cosAngley * 5}px`);
+            
         };
 
         const handleScroll=()=>{
             const { y } = divsun.current.getBoundingClientRect()
-            if (y < 410 && y>0){
+            if (y < 600 && y>0){
                 const dark=(y-500)/-4.5;
                 const position=(y-50)/3.27;
                 rootStyles.setProperty('--dark', `${dark}%`);
@@ -96,7 +98,10 @@ const RickAndMorty=()=>{
         <div className="skillsRick">
             <h1>Tecnologias</h1>
             <div>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40" /></div>
+                <SiReact className="icosProyect" />
+                <SiJavascript className="icosProyect" />         
+                <SiRedux className="icosProyect" />
+                 </div>
         </div>
        
        

@@ -11,6 +11,7 @@
     animation-timing-function: linear;
     animation-iteration-count: 1;
     overflow-y: auto;
+    box-shadow: 2px 2px 8px var(--textPrimary);
 
     .ContainerB3 {
         width: 90%;
@@ -68,10 +69,10 @@
 
     .BaitBottons1 {
         cursor: pointer;
-        background: var(--blue-1);
+        background: var(--botton);
         padding: 5px;
         border-radius: 10px;
-        color: white;
+        color: var(--textPrimary);
         display: flex;
         gap: 10px;
 
@@ -94,7 +95,7 @@
 }
 
 .Bait::-webkit-scrollbar-thumb {
-    background: var(--green-1);
+    background: var(--textPrimary);
     border-radius: 10px;
 }
 

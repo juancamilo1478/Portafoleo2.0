@@ -1,0 +1,22 @@
+.canvascontainer {
+    width: min-content;
+    height: min-content;
+    background: white;
+    z-index: 5;
+}
+
+.table {
+    border: solid rgb(22, 22, 22);
+    cursor: url(/src/assets/paint.svg) 10 30, auto;
+}
+
+.canvasMake {
+    background: rgb(59, 59, 59);
+    display: flex;
+    justify-content: right;
+}
+
+.canvasMake button {
+    background: rgb(19, 171, 231);
+    color: aliceblue;
+}

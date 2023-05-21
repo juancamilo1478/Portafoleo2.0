@@ -6,7 +6,9 @@ import Slider from "../../../Hooks/Slider";
 import PhotoS1 from "../../../assets/1.jpg";
 import PhotoS2 from "../../../assets/2.jpg";
 import { useEffect, useRef } from "react";
-import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
+import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
+
+import { SiReact, SiJavascript, SiPostgresql, SiNodedotjs, SiSequelize, SiRedux, SiSass } from "react-icons/si"
 const Food =()=>{
     const DivAnimation=useRef()
     const Animation = useRef();
@@ -64,7 +66,15 @@ const Food =()=>{
         <div className="skillsRick">
             <h1>Tecnologias</h1>
             <div>
-                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40" />   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40" />  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40" /> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40" /> </div>
+                
+                <SiReact className="icosProyect"/>
+                <SiJavascript className="icosProyect" />
+                <SiPostgresql className="icosProyect" />
+                <SiNodedotjs className="icosProyect" />
+                <SiSequelize className="icosProyect" /> 
+                <SiRedux className="icosProyect" /> 
+                <SiSass className="icosProyect" />
+                </div>
         </div>
     </div>
 }

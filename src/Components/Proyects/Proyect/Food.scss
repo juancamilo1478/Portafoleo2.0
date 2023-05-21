@@ -14,6 +14,7 @@
         animation-duration: 1.5s;
         animation-timing-function: linear;
         animation-iteration-count: 1;
+        box-shadow: 2px 2px 8px var(--textPrimary);
 
         .FoodtContainerText {
             width: 90%;
@@ -80,13 +81,17 @@
 
     }
 
+    .icosProyect {
+        font-size: 2rem;
+    }
+
     .Food::-webkit-scrollbar {
         width: 7px;
 
     }
 
     .Food::-webkit-scrollbar-thumb {
-        background: var(--green-1);
+        background: var(--textPrimary);
         border-radius: 10px;
     }
 

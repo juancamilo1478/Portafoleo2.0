@@ -1,14 +1,16 @@
 .Navbar {
     width: 200px;
     height: 100vh;
-    background: var(--gray-4);
-    color: white;
+    background: var(--secont);
+    box-shadow: 4px 0px 4px rgba(250, 248, 248, 0.973);
+    color: var(--textPrimary);
+
     // position: fixed;
 
     hr {
         border: 0;
         height: 1px;
-        background-color: #ccc;
+        background-color: var(--textPrimary);
         margin: auto;
         width: 95%;
     }
@@ -24,6 +26,7 @@
             margin: 10px auto;
             border-radius: 50%;
             margin-bottom: 50px;
+            background: var(--botton);
         }
     }
 
@@ -49,7 +52,7 @@
     }
 
     .NavContainer:hover {
-        color: var(--green-1);
+        color: var(--textHover);
     }
 
     .NavLink {
@@ -68,7 +71,7 @@
         }
 
         .navIco:hover {
-            color: var(--green-1);
+            color: var(--textHover);
             transform: translateY(-10px);
         }
     }
@@ -76,17 +79,36 @@
 
 }
 
+.color {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    right: -1.5%;
+    top: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
 @media (max-width: 900px) {
     .Navbar {
         hr {
             display: none;
         }
+
         width: 100%;
         height: min-content;
         display: flex;
         justify-content: center;
         gap: 40px;
         padding: 10px;
+
         .NavPhoto {
             display: none;
         }
