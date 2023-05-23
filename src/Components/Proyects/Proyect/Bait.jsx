@@ -4,7 +4,7 @@ import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 import { SiReact, SiJavascript, SiPostgresql, SiNodedotjs, SiSequelize, SiRedux, SiFirebase } from "react-icons/si"
 const Bait=()=>{
  
-    return<div className="Bait">
+    return <div className="containerData">
         <div className="BaitContainer"> 
             <div className="ContainerB3">
                 <h1>Bait</h1> 

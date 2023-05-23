@@ -1,5 +1,6 @@
 .Rick {
     overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
     width: 80%;
     height: 80vh;
@@ -112,6 +113,15 @@
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
+
+        .icosProyect:hover {
+            cursor: pointer;
+            animation-name: IcosSkills;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
     }
 }
 
@@ -123,4 +133,14 @@
 .Rick::-webkit-scrollbar-thumb {
     background: var(--textPrimary);
     border-radius: 10px;
+}
+
+@keyframes IcosSkills {
+    30% {
+        transform: rotate(-45deg);
+    }
+
+    60% {
+        transform: rotate(45deg);
+    }
 }

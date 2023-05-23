@@ -1,8 +1,11 @@
 .contact {
     width: calc(100% - 200px);
     height: 100vh;
+
     color: var(--textPrimary);
     background: var(--primaty);
+
+    max-height: 100vh;
 
     .contactContainer {
         width: 100%;
@@ -12,6 +15,10 @@
             height: 100vh;
             width: 30%;
             background: var(--secont);
+
+            h1 {
+                margin-bottom: 20px;
+            }
 
             form {
 
@@ -24,6 +31,7 @@
                 width: 100%;
                 margin-bottom: 10px;
 
+
                 p {
                     width: 100px;
 
@@ -33,10 +41,23 @@
 
                     width: 150px;
                     border: transparent;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     text-align: center;
-                    background: var(--primaty);
+                    background: var(--textPrimary);
+                    color: var(--primaty);
                 }
+            }
+
+            .sendContact {
+                margin-top: 10px;
+                width: 100%;
+                height: 25px;
+                border-radius: 10px;
+                background-color: var(--textPrimary);
+                color: var(--primaty);
+                border: none;
+                box-shadow: var(--textHover);
+
             }
 
             .ContactMessage {
@@ -62,5 +83,181 @@
 
 .contactDecoration {
     width: 70%;
-    height: 100vh;
+
+
+
+    .SkillsContainer {
+        width: 100%;
+        height: 400px;
+
+        display: flex;
+        justify-content: center;
+        position: relative;
+        perspective: 1000px;
+        background: var(--primaty);
+
+        // margin: 200px 0px;
+        margin-top: 20%;
+
+        .ladoa {
+            height: 300px;
+            width: 300px;
+            animation: girar 4s linear infinite;
+            position: absolute;
+            transition: 0.5s linear;
+
+            cursor: pointer;
+            background-color: var(--secont);
+            color: var(--textPrimary);
+            background-position: center;
+            background-size: cover;
+            transform: rotateY(var(--windowa)) translateZ(150px);
+            z-index: var(--zindexa);
+        }
+
+        .ladob {
+            transition: 0.5s linear;
+            height: 300px;
+            width: 300px;
+
+            animation: girar 4s linear infinite;
+            position: absolute;
+            cursor: pointer;
+            background-color: var(--secont);
+            color: var(--textPrimary);
+            // background-image: url("../../assets/r1.png");
+            background-position: center;
+            background-size: cover;
+            animation-delay: -1s;
+            transform: rotateY(var(--windowb)) translateZ(150px);
+            z-index: var(--zindexb);
+        }
+
+        .ladoc {
+
+            transition: 0.5s linear;
+            height: 300px;
+            width: 300px;
+            animation: girar 4s linear infinite;
+            position: absolute;
+            cursor: pointer;
+            background-color: var(--secont);
+            color: var(--textPrimary);
+            // background-image: url("../../assets/mano1.png");
+            background-position: center;
+            background-size: cover;
+            animation-delay: -2s;
+            transform: rotateY(var(--windowc)) translateZ(150px);
+            z-index: var(--zindexc);
+
+        }
+
+        .ladod {
+
+            transition: 0.5s linear;
+            height: 300px;
+            width: 300px;
+            animation: girar 4s linear infinite;
+            position: absolute;
+
+            cursor: pointer;
+            background-color: var(--secont);
+            color: var(--textPrimary);
+            background-position: center;
+            background-size: cover;
+            animation-delay: -3s;
+            z-index: var(--zindexd);
+            transform: rotateY(var(--windowd)) translateZ(150px)
+        }
+
+        .ladod_1 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background: rgb(3, 3, 3);
+            animation: rotar2 4s linear infinite;
+            margin: 150px;
+            // transform: rotateY(deg) translateZ(150px)
+        }
+
+        .ladod_2 {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            background: rgb(14, 13, 13);
+            animation: rotar2 4s linear infinite;
+            margin: -150px;
+        }
+    }
+}
+
+.icoCub {
+    font-size: 4rem;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-height: 100vh;
+}
+
+
+
+
+@keyframes girar {
+    from {
+        transform: rotateY(360deg) translateZ(150px)
+    }
+
+    50% {
+        z-index: -10;
+    }
+
+    to {
+        transform: rotateY(0) translateZ(150px);
+        z-index: 10;
+    }
+}
+
+@keyframes rotar2 {
+    from {
+        transform: rotateY(360deg) rotateX(90deg);
+    }
+
+    to {
+        transform: rotateY(0deg)rotateX(90deg);
+    }
+}
+
+
+@media (max-width: 900px) {
+    .contact {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .contact {
+        width: 100%;
+        height: 100%;
+
+        .contactContainer {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+
+            .contactFomr {
+                height: min-content;
+                width: 100%;
+
+                form {
+                    margin: auto;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .contactDecoration {
+            width: 100%;
+            height: min-content;
+
+        }
+    }
 }

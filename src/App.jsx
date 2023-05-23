@@ -4,7 +4,9 @@ import Contact from "./Components/Contact/Contact"
 import Proyects from "./Components/Proyects/Proyects"
 import Abaut from "./Components/Abaut/Abaut"
 import Navbar from "./Components/Navbar/Navbar"
+
 import "./App.scss"
+import CvPdf from "./Components/Home/CvPdf"
 function App() {
 
 
@@ -16,6 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact/>} />
       <Route path="/proyects" element={<Proyects/>} />
       <Route path="/abaut" element={<Abaut />} />
+      <Route path="/cv" element={<CvPdf/>} />
       </Routes>
     </div>
   )

@@ -36,3 +36,10 @@
     background: rgba(0, 0, 0, 0.555);
     color: #00D686;
 }
+
+@media (max-width: 1200px) {
+    .slider {
+        transform: perspective(0px) rotateY(0deg);
+        ;
+    }
+}

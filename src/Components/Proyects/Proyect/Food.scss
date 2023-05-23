@@ -3,6 +3,7 @@
 
     .Food {
         overflow-y: scroll;
+        overflow-x: hidden;
         position: relative;
         width: 80%;
         height: 80vh;
@@ -16,27 +17,12 @@
         animation-iteration-count: 1;
         box-shadow: 2px 2px 8px var(--textPrimary);
 
-        .FoodtContainerText {
-            width: 90%;
-            display: flex;
-            margin: 100px auto;
-
-
-            div {
-                width: 50%;
-                margin: auto;
-            }
-
-            p {
-                margin-top: 30px;
-            }
-        }
-
         .FoodAnimation {
             position: relative;
             width: 100%;
             height: 500px;
             margin: auto;
+            margin-top: 150px;
 
             .FoodUp {
 
@@ -96,9 +82,9 @@
     }
 
     @keyframes IcoFood {
-
-
         100% {
             transform: translateY(50px);
         }
     }
+
+   

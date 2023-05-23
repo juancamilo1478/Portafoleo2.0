@@ -5,80 +5,108 @@
     color: var(--textPrimary);
     background: var(--primaty);
 
-    .aboutContainer {
-        position: relative;
+    object {
+        min-height: 100vh;
+    }
+
+    .Abaut2 {
+        width: 90%;
         display: flex;
-        width: 100%;
-        height: 80vh;
+        gap: 10px;
         margin: 100px auto;
 
-        .containerAbaut {
-            overflow-y: scroll;
-            position: relative;
-            width: 80%;
-            height: 80vh;
-            margin: auto;
-            background: rgba(56, 56, 56, 0.13);
-            border-radius: 10px;
-            animation-name: bait;
-            animation-fill-mode: forwards;
-            animation-duration: 1.5s;
-            animation-timing-function: linear;
-            animation-iteration-count: 1;
+        div {
+            width: 50%;
+            height: 100%;
 
-            .AboutText {
-                display: flex;
-                width: 90%;
-                margin: 100px auto;
-                gap: 15px;
+            p {
+                margin-top: 40px;
+            }
 
-                div {
-                    width: 50%;
+            img {
+                width: 70%;
+                height: 70%;
+                background: var(--secont);
+                border-radius: 50%;
 
-                    p {
-                        font-size: 1.5rem;
-                    }
-
-                    img {
-                        width: 100%;
-                        background: var(--secont);
-                        border-radius: 50%;
-                        height: 400px;
-
-                    }
-                }
             }
         }
+    }
+
+}
 
 
+.cv {
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+    background: var(--secont);
+    width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
 
+    .icoCv {
+        font-size: 3rem;
+        transition: 0.2s;
+    }
 
-
-
-
-
-
-
-        .containerAbaut::-webkit-scrollbar {
-            width: 7px;
-
-        }
-
-        .containerAbaut::-webkit-scrollbar-thumb {
-            background: var(--green-1);
-            border-radius: 10px;
-        }
+    h1 {
+        font-size: 2rem;
     }
 }
+
+.cv:hover {
+    background: var(--secont);
+
+    .icoCv {
+        transform: translateY(-5px);
+    }
+}
+
+
 
 @media (max-width: 900px) {
     .abaut {
         width: 100%;
-        height: 100vh;
+        height: 100%;
 
-        .aboutContainer {
-            margin: 20px auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .cv {
+        margin: 50px auto;
+
+        .icoCv {
+            font-size: 2rem;
+            transition: 0.2s;
         }
 
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .abaut {
+        width: 100%;
+        height: 100%;
+
+        .Abaut2 {
+            flex-wrap: wrap;
+
+            div {
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                padding-bottom: 10px;
+
+                img {
+                    width: 50%;
+                }
+            }
+        }
     }
 }

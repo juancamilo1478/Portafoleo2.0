@@ -89,8 +89,8 @@ const Navbar=()=>{
         <hr />
       
     <div className="NavLink">
-            <AiOutlineGithub className="navIco" />
-            <AiFillLinkedin className="navIco" />
+            <a href="https://github.com/juancamilo1478" target="_blank" rel="noreferrer"><AiOutlineGithub className="navIco" /></a>
+            <a href="https://www.linkedin.com/in/juan-camilo-saiz-sanjuan-a66245246/" target="_blank" rel="noreferrer"><AiFillLinkedin className="navIco" /></a>
     </div>      
     </div>
 }

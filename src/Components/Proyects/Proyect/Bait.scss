@@ -1,4 +1,4 @@
-.Bait {
+.containerData {
     position: relative;
     width: 80%;
     height: 80vh;
@@ -12,40 +12,16 @@
     animation-iteration-count: 1;
     overflow-y: auto;
     box-shadow: 2px 2px 8px var(--textPrimary);
+}
 
-    .ContainerB3 {
-        width: 90%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+.ContainerB3 {
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
-        .BaitContainer2 {
-            width: 90%;
-            display: flex;
-            margin: auto;
 
-            h1 {
-                font-size: 3rem;
 
-            }
-
-            div {
-                width: 50%;
-                margin: auto;
-
-                p {
-                    margin-left: 20px;
-                    font-size: 1.1rem;
-
-                }
-
-                iframe {
-                    transform: perspective(800px) rotateY(-35deg);
-                }
-            }
-        }
-
-    }
 }
 
 @keyframes bait {
@@ -58,6 +34,36 @@
     }
 
 }
+
+.BaitContainer2 {
+    width: 90%;
+    display: flex;
+    margin: auto;
+
+    h1 {
+        font-size: 3rem;
+
+    }
+
+    div {
+        width: 50%;
+        margin: auto;
+
+        p {
+            margin-left: 20px;
+            font-size: 1.1rem;
+
+        }
+
+        iframe {
+            transform: perspective(800px) rotateY(-35deg);
+        }
+    }
+}
+
+
+
+
 
 
 .BaitBottons {
@@ -89,37 +95,34 @@
     }
 }
 
-.Bait::-webkit-scrollbar {
+.containerData::-webkit-scrollbar {
     width: 7px;
 
 }
 
-.Bait::-webkit-scrollbar-thumb {
+.containerData::-webkit-scrollbar-thumb {
     background: var(--textPrimary);
     border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
-    .Bait {
-        .ContainerB3 {
-            .BaitContainer2 {
-                flex-wrap: wrap;
-                justify-content: center;
-
-                div {
-                    margin-bottom: 20px;
-                    width: 100%;
-
-                    iframe {
-                        margin-top: 10px;
-                        transform: perspective(0px) rotateY(0deg);
-                        width: 100%;
-                    }
-                }
 
 
+    .BaitContainer2 {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div {
+            margin-bottom: 20px;
+            width: 100%;
+
+            iframe {
+                margin-top: 10px;
+                transform: perspective(0px) rotateY(0deg);
+                width: 100%;
             }
-
         }
+
+
     }
 }

@@ -62,7 +62,7 @@ const RickAndMorty=()=>{
             </div>
         <img src={titleRick} alt="title" />
         </div>
-        <div className="RickText" >
+        <div className="BaitContainer2" >
             <div>
                 <h1>Rick and morty</h1>
                 <p>My primera aplicacion echa en react.Esta aplicación permitirá a los usuarios ver todos los personajes de la serie y filtrarlos según sus características. Además, tendrán la posibilidad de agregar sus personajes favoritos a una lista personalizada.</p>

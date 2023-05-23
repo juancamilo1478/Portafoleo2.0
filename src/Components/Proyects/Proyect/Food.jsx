@@ -40,9 +40,8 @@ const Food =()=>{
 
     
     const data=[PhotoS1,PhotoS2]
-
     return <div className="Food" ref={DivAnimation} >
-        <div className="FoodtContainerText" >
+        <div className="BaitContainer2" >
             <div>
                 <h1>Food</h1>
                     <p>Esta aplicación ofrece a los usuarios una solución completa para buscar y seleccionar diferentes tipos de comidas según sus necesidades dietéticas. Además, permite a los usuarios crear y clasificar nuevas recetas de cocina de acuerdo a su dieta, lo que les permite compartir sus ideas y ayudar a otros usuarios a llevar una dieta más acorde a sus necesidades.</p>
@@ -55,12 +54,12 @@ const Food =()=>{
             <img src={photo2} alt="up" className="FoodUp" />
             <img src={photo1} alt="Down" className="FoodDown"/>
             <div className="FoodIcons">
-            <a href="https://github.com/juancamilo1478/food" target="_blank" rel="noreferrer">   
-            <AiOutlineGithub className="FoodICO"/>
-            </a>
-                <a href="https://nimble-brigadeiros-9e61f5.netlify.app/" target="_blank" rel="noreferrer">   
-            <AiOutlineLink className="FoodICO" /> 
+                <a href="https://github.com/juancamilo1478/food" target="_blank" rel="noreferrer">   
+                <AiOutlineGithub className="FoodICO"/>
                 </a>
+                    <a href="https://nimble-brigadeiros-9e61f5.netlify.app/" target="_blank" rel="noreferrer">   
+                <AiOutlineLink className="FoodICO" /> 
+                    </a>
             </div>
         </div>
         <div className="skillsRick">
