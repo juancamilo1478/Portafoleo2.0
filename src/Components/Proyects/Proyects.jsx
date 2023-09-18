@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./Proyects.scss";
-import RickAndMorty from "./Proyect/RickAndMorty";
-import Food from "./Proyect/Food";
+ 
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md"
-import Bait from "./Proyect/Bait";
+ 
+import ProyectGeneral from "./Proyect/ProyectsGeneral";
+import ProyectsWebs from "./Proyect/ProyectsWebs";
 
 const Proyects = () => {
     const [ProyectPosition, setProyectposition] = useState(0);
@@ -11,7 +12,7 @@ const Proyects = () => {
     const handleProyect = (action) => {
         console.log(ProyectPosition);
         if (action === "next") {
-            if (ProyectPosition === 2) {
+            if (ProyectPosition === 1) {
                 setProyectposition(0);
             } else {
                 const next = ProyectPosition + 1;
@@ -20,7 +21,7 @@ const Proyects = () => {
         }
         if (action === "previus") {
             if (ProyectPosition === 0) {
-                setProyectposition(2);
+                setProyectposition(1);
             } else {
                 const next = ProyectPosition - 1;
                 setProyectposition(next);
@@ -30,18 +31,17 @@ const Proyects = () => {
 
     return (
         <div className="Proyects">
+            
             <div className="ProyectContainer">
                 < MdNavigateBefore
                     className="ProyectIconNext"
                     onClick={() => handleProyect("next")}
                 />
                 {ProyectPosition === 0 ? (
-                    <Bait />
+                           <ProyectsWebs/>
                 ) : ProyectPosition === 1 ? (
-                    <Food />
-                ) : (
-                    <RickAndMorty />
-                )}
+                    <ProyectGeneral/>
+                ) :null}
                 <MdNavigateNext 
                     className="ProyectIcon"
             

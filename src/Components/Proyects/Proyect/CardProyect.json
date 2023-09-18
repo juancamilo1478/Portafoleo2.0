@@ -1,0 +1,8 @@
+[{
+    "id":1,
+    "title":"Sistema Contable Restaurante",
+    "description":"El sofware se encuentra funcionando el restaurante los amigos k5 via rovira ibague el cual permite saber las ganancias de cada uno de los dueños el dia espesifico las propinas de los meceros y el control del inventario",
+    "skills":["Node","Flutter","PostgresSQL"],
+    "images":["https://res.cloudinary.com/dirsusbyy/image/upload/v1694968811/qrytwkxwicxunb6xpbwi.png","https://res.cloudinary.com/dirsusbyy/image/upload/v1694968898/rcgianwbmbsz4tirpugr.png"],
+    "video":"https://www.youtube.com/embed/lbC5NzPJ5ps"
+}]

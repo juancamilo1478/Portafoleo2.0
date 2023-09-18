@@ -1,5 +1,6 @@
  
 import "./Bait.scss"
+import { BiReply } from "react-icons/bi";
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai"
 import { SiReact, SiJavascript, SiPostgresql, SiNodedotjs, SiSequelize, SiRedux, SiFirebase } from "react-icons/si"
 const Bait=()=>{
